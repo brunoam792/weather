@@ -5,11 +5,10 @@ const axios = require('axios');
 const app = express();
 const port = 3000;
 
-const apiKey = 'YOUR_API_KEY'; // Replace 'YOUR_API_KEY' with your actual API key
+const apiKey = '862694f448a4fe6a6bdddee4cae2c879'; // Replace 'YOUR_API_KEY' with your actual API key
 const apiUrl = 'https://api.openweathermap.org/data/3.0/onecall';
 
-// Serve static files from the 'public' directory
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, '/')));
 
 app.get('/weather', async (req, res) => {
   try {

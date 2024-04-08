@@ -1,4 +1,3 @@
-// scripts.js
 async function fetchWeatherData() {
     try {
       const response = await fetch('/weather');
